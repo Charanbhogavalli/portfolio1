@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | My Portfolio</title>
+  <style>
+    :root {
+      --primary: #6c5ce7;
+      --secondary: #a29bfe;
+      --text: #2d3436;
+      --bg: #f0f2f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 40px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 3em;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #5a4de0;
+    }
+
+    @media (max-width: 600px) {
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm Charan Bhogavalli, a passionate developer. Explore my projects, resume, and contact me easily below.</p>
+
+    <div class="btn-group">
+      <a href="sample.html" class="btn">Sample Project</a>
+      <a href="resume.html" class="btn">Resume</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </div>
+  </div>
+
+</body>
+</html>

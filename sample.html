@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI LLM Model Store</title>
+  <style>
+    :root {
+      --primary: #2874f0;
+      --accent: #fb641b;
+      --bg: #f1f3f6;
+      --card: #ffffff;
+      --text: #212121;
+      --subtext: #757575;
+      --price: #2e7d32;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 16px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .search-bar input {
+      padding: 8px 16px;
+      width: 300px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: var(--card);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-4px);
+    }
+
+    .product img {
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      background-color: #f0f0f0;
+    }
+
+    .product h3 {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      font-size: 0.9em;
+      color: var(--subtext);
+      margin-bottom: 10px;
+      min-height: 50px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--price);
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      background-color: var(--accent);
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #e55916;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+      background: #fff;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .search-bar input {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧠 AI Mall India</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search AI models...">
+    </div>
+    <nav>
+      <a href="./home.html">home</a>
+      <a href="#">Cart</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Top AI LLM Models For Sale</h2>
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="./images/liama3.jpg" alt="LLaMA 3">
+        <h3>LLaMA 3</h3>
+        <p>Multilingual, witty, and surprisingly good at dad jokes.</p>
+        <div class="price">₹12,499</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/2.jpg" alt="Mistral 7B">
+        <h3>Mistral 7B</h3>
+        <p>Blazing fast, sleek design. Answers before you even ask.</p>
+        <div class="price">₹9,999</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/gemma.jpg" alt="Gemma">
+        <h3>Gemma</h3>
+        <p>Google's lightweight genius. Predicts, translates, entertains.</p>
+        <div class="price">₹7,499</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/phi3.jpg" alt="Phi-3">
+        <h3>Phi-3</h3>
+        <p>Small but mighty. Your AI pocket assistant on steroids.</p>
+        <div class="price">₹5,999</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/pi r.jpg" alt="Command R+">
+        <h3>Command R+</h3>
+        <p>Retrieval god. Perfect for building ChatGPT-style bots.</p>
+        <div class="price">₹13,999</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/y.jpg" alt="Yi 34B">
+        <h3>Yi 34B</h3>
+        <p>Massive brain. Fluent in Mandarin, Python, and sarcasm.</p>
+        <div class="price">₹15,999</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/hermes.jpg" alt="OpenHermes">
+        <h3>OpenHermes</h3>
+        <p>Creative roleplayer. Writes fantasy, fiction, and flirts.</p>
+        <div class="price">₹8,499</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/falcon.jpg" alt="Falcon 40B">
+        <h3>Falcon 40B</h3>
+        <p>Heavyweight multilingual champion. Large and in charge.</p>
+        <div class="price">₹19,999</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/WhatsApp Image 2025-08-01 at 18.40.20_31d60b19.jpg" alt="MythoMax">
+        <h3>CHITTI</h3>
+        <p>HUMANOID ROBORT CREATED BY VASHIKAR</p>
+        <div class="price">₹6,999</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/WhatsApp Image 2025-08-01 at 18.40.20_7e46d490.jpg" alt="Chronos">
+        <h3>Chronos</h3>
+        <p>Time-aware model. Plans your calendar and your future.</p>
+        <div class="price">₹10,999</div>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 AI Mall — Portfolio project (not a real store)
+  </footer>
+
+</body>
+</html>
